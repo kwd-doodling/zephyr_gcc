@@ -2114,8 +2114,7 @@ extern int const svr4_dbx_register_map[FIRST_PSEUDO_REGISTER];
 
 #include "dwarf2.h"
 
-int
-i386_dwarf_calling_convention (const_tree function)
+static inline int i386_dwarf_calling_convention (const_tree function)
 {
     // Return the appropriate DWARF calling convention tag
     return DW_CC_normal; // or another appropriate DW_CC_ tag
